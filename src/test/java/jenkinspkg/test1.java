@@ -32,12 +32,13 @@ public class test1 {
 		
 	}
 	
-	@Test
-	public void te1() {
+	@Test(timeOut = 1000)
+	public void te1() throws InterruptedException {
 		
 		
 		driver.get("https://accounts.simplilearn.com/user/login");
 		driver.manage().window().maximize();	
+		Thread.sleep(2000);
 		
 		
 	}
